@@ -1,0 +1,22 @@
+.tabs
+    display: flex
+    align-items: center
+    &-list
+        list-style-type: none
+        display: flex
+        align-items: center
+    &-item
+        font-weight: 500
+        font-size: 28px
+        line-height: 33px
+        color: $text-color
+        margin: 12px
+        cursor: pointer
+        &-active
+            color: $primary
+            border-bottom: 2px solid #E5261E
+.content
+    &-item
+        display: none
+        &-active
+            display: block

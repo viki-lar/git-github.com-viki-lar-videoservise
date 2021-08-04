@@ -10,31 +10,48 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Видеосервис</title>
 </head>
-<header class="header">
-    <div class="container header-container">
-        <div class="header-logo">
-            <img src="./img/logo.png" alt="logo" class="header-image">
-            <h1 class="header-name">Видеосервис</h1>
-        </div>
-        <!--./ logo -->
-
-        <form action="#" class="header-search search">
-            <input type="text" class="search-input" placeholder="Поиск...">
-            <button class="search-button">
-                Найти
-            </button>
-        </form>
-        <!--./ search form-->
-
-        <button class="header-button">
-            Войти
-        </button>
-    </div>
-</header>
-<!--./ header -->
 
 <body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-logo">
+                <img src="./img/logo.png" alt="logo" class="header-image">
+                <h1 class="header-name">Видеосервис</h1>
+            </div>
+            <!--./ logo -->
 
+            <form action="#" class="header-search search">
+                <input type="text" class="search-input" placeholder="Поиск...">
+                <button class="search-button">
+                    Найти
+                </button>
+            </form>
+            <!--./ search form-->
+
+            <button class="header-button">
+                Войти
+            </button>
+        </div>
+    </header>
+    <!--./ header -->
+
+    <div class="tabs">
+        <div class="container tabs-container">
+            <ul class="tabs-list">
+                <li class="tabs-item tabs-item-active" data-target="films">Фильмы</li>
+                <li class="tabs-item" data-target="canals">Телеканалы</li>
+            </ul>
+            <div class="films content-item" id="films">фильмы</div>
+            <div class="canals content-item" id="canals">каналы</div>
+        </div>
+        <!--./ tabs-container -->
+
+    </div>
+    <!--./ tabs -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
