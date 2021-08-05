@@ -7,6 +7,7 @@
         font-size: 24px
         line-height: 28px
 .news
+    margin-bottom: 32px
     &-item
         width: 280px
         cursor: pointer
@@ -23,6 +24,32 @@
         color: inherit
         &:hover
             color: $primary
+    &-wrapper
+        width: 280px
+        height: 320px
+        position: relative
+        border-radius: 8px
+        overflow: hidden
+        margin-bottom: 16px
+        &:hover
+            .news-about
+                display: block
+
+    &-about
+        position: absolute
+        padding: 16px
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background-color: #333333
+        opacity: 0.8
+        color: #F2F2F2
+        display: none
+        font-weight: normal
+        font-size: 16px
+        line-height: 140%
+
 .categories
     &-wrapper
         display: flex
