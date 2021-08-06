@@ -1,8 +1,8 @@
 .header
-
-    padding-top: 20px
+    padding-top: 22px
     margin-bottom: 20px
     &-container
+        position: relative
         display: flex
         justify-content: space-between
         align-items: center
@@ -19,8 +19,11 @@
         line-height: 24px
         padding: 0
     &-search
-        display: flex
-        margin-right: 80px
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
 .button
     font-weight: 500
     font-size: 16px

@@ -1,34 +1,71 @@
 @media ( max-width: 1200px  )
     .container
         max-width: 960px
+
+    .films
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: space-around
+
+    .news
+        &-item
+            &-last
+                display: none
+    .categories
+        &-item
+            max-width: 230px
+            max-height: 190px
 @media ( max-width:992px )
     .container
         max-width: 700px
-@media ( max-width:767px )
-    .container
-        max-width: 576px
+    .header
+        &-container
+            flex-wrap: wrap
+        &-search
+            margin-right: 20px
     .search
         &-input
             max-width: 150px
+    .news
+        &-item
+            &-last
+                display: block
+    .categories
+        &-wrapper
+            flex-wrap: wrap
+        &-item
+            max-width: 280px
+            max-height: 208px
+            margin-bottom: 20px
+@media ( max-width:767px )
+    .container
+        max-width: 576px
+    .header
+        &-container
+            height: 100px
+        &-search
+            position: absolute
+            left: 22%
+            top: 120%
 
 @media ( max-width: 576px )
+
     .container
         max-width: 480px
-    .header
-        &-image
-            width: 20px
-            height: 20px
-        &-name
-            font-size: 18px
-        &-button
-            font-size: 14px
-            padding: 5px 10px
-    .search
-        &-input
-            max-width: 100px
+
+    .tabs-item
+        font-size: 22px
+        margin-right: 20px
+    .films
+        &-wrapper
+            flex-direction: column
+            align-items: center
+    .categories
+        &-wrapper
+            flex-direction: column
+            align-items: center
 @media ( max-width:380px )
     .container
         max-width: 310px
-    .search
-        &-input
-            width: 100px
+    .footer
+        padding: 20px
