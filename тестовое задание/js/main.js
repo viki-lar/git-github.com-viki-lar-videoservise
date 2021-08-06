@@ -9,4 +9,23 @@ $(document).ready(function () {
         $(activeContent).addClass("content-item-active");
         $(this).addClass("tabs-item-active");
     });
+
+    var modalButton = $("[data-togle=modal]");
+    var closemodalButton = $("[data-togle=close-modal]");
+    modalButton.on("click", openModal);
+    closemodalButton.on("click", closeModal);
+
+    function openModal() {
+        var modalOverlay = $(".modal-overlay");
+        var modalDialog = $(".modal-dialog");
+        modalOverlay.addClass("modal-overlay-visible");
+        modalDialog.addClass("modal-dialog-visible");
+    };
+    function closeModal(event) {
+        event.preventDefault();
+        var modalOverlay = $(".modal-overlay");
+        var modalDialog = $(".modal-dialog");
+        modalOverlay.removeClass("modal-overlay-visible");
+        modalDialog.removeClass("modal-dialog-visible");
+    }
 });

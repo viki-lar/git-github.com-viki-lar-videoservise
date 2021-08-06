@@ -28,7 +28,7 @@
             </form>
             <!--./ search form-->
 
-            <button class="header-button">
+            <button class="header-button button" data-togle="modal">
                 Войти
             </button>
         </div>
@@ -204,7 +204,30 @@
         </div>
     </footer>
     <!--./ footer -->
+    <div class="modal">
+        <div class="modal-overlay" data-togle="close-modal"></div>
+        <!-- /.modal-overlay -->
+        <div class="modal-dialog">
 
+            <div class="modal-contacts-form">
+                <h3 class="modal-title">Вход</h3>
+                <form action="send.php" method="POST" class="modal-form form">
+                    <input type="text" class=" input modal-input" placeholder="Логин" name="name" required
+                        minlength="2">
+                    <input type="text" class=" input modal-input" placeholder="Пароль" name="name" required
+                        minlength="2">
+                    <p class="modal-checkbox"><input type="checkbox" name="a" value="Запомнить"> Запомнить</p>
+                    <button class="button modal-button">Войти</button>
+
+
+
+                </form>
+            </div>
+
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

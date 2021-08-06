@@ -1,0 +1,56 @@
+.modal
+    &-overlay
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(51, 51, 51, 0.6)
+        z-index: 100
+        visibility: hidden
+        transition: opacity 0.6
+        &-visible
+            visibility: visible
+            opacity: 1
+    &-dialog
+        position: fixed
+        left: 50%
+        top: 50%
+        padding: 36px
+        background-color: $background-color
+        color: $text-color
+        border-radius: 8px
+        max-width: 304px
+        z-index: 101
+        transform: translate(-50%, -50%)
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.2
+        &-visible
+            visibility: visible
+            opacity: 1
+
+    &-title
+        font-style: normal
+        font-weight: 500
+        font-size: 28px
+        line-height: 33px
+        text-align: center
+        margin: 0
+        margin-bottom: 24px
+    &-input
+        width: 230px
+        margin-bottom: 24px
+        border: none
+        border-bottom: 1px solid $text-color
+        ::placeholder
+            font-size: 16px
+            line-height: 19px
+            color: #828282
+    &-checkbox
+        margin: 0
+        margin-bottom: 110px
+    &-button
+        position: relative
+        left: 50%
+        transform: translate(-50%, 0)
