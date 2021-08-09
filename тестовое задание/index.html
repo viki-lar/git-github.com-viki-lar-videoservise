@@ -26,11 +26,17 @@
                     Найти
                 </button>
             </form>
-            <!--./ search form-->
 
             <button class="header-button button" data-togle="modal">
                 Войти
             </button>
+            <form action="#" class="search search-mobile">
+                <input type="text" class="search-input" placeholder="Поиск...">
+                <button class="search-button">
+                    Найти
+                </button>
+            </form>
+            <!--./ search form-->
         </div>
     </header>
     <!--./ header -->
@@ -133,8 +139,9 @@
     <div class="channels content-item" id="channels">
         <div class="channels-container container">
             <div class="channels-item">
-
-                <img src="./img/1st.png" alt="Первый канал" class="channels-item-logo">
+                <div class="channels-item-logo-wrapper">
+                    <img src="./img/1st.png" alt="Первый канал" class="channels-item-logo">
+                </div>
                 <div class="channels-item-wrapper">
                     <h2 class="channels-item-title">Первый канал</h2>
                     <span class="channels-item-about-active">13:00</span>
@@ -146,8 +153,9 @@
                 </div>
             </div>
             <div class="channels-item">
-
-                <img src="./img/2x2.png" alt="2x2" class="channels-item-logo">
+                <div class="channels-item-logo-wrapper">
+                    <img src="./img/2x2.png" alt="2x2" class="channels-item-logo">
+                </div>
                 <div class="channels-item-wrapper">
                     <h2 class="channels-item-title">2x2</h2>
                     <span class="channels-item-about-active">13:00</span>
@@ -159,7 +167,10 @@
                 </div>
             </div>
             <div class="channels-item">
-                <img src="./img/rbc.png" alt="РБК" class="channels-item-logo">
+                <div class="channels-item-logo-wrapper">
+
+                    <img src="./img/rbc.png" alt="РБК" class="channels-item-logo">
+                </div>
                 <div class="channels-item-wrapper">
 
                     <h2 class="channels-item-title">РБК</h2>
@@ -174,7 +185,10 @@
             </div>
             <div class="channels-item">
 
-                <img src="./img/amedia.png" alt="Амедиа" class="channels-item-logo">
+                <div class="channels-item-logo-wrapper">
+                    <img src="./img/amedia.png" alt="Амедиа" class="channels-item-logo">
+                </div>
+
                 <div class="channels-item-wrapper">
                     <h2 class="channels-item-title">AMEDIA PREMIUM</h2>
                     <span class="channels-item-about-active">13:00</span>
@@ -186,6 +200,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!--./ channels -->
 
